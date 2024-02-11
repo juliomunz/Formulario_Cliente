@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+    <h2>Ingresar Cliente</h2>
+    <form id="crudForm" action="procesar.php" method="post" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="rut">RUT:</label>
+        <input type="text" id="rut" name="rut" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+
+        <label for="numeroCaso">Numero Caso:</label>
+        <input type="text" id="numeroCaso" name="numeroCaso" required>
+
+        <label for="descripcionCaso">Descripción del caso:</label>
+        <input type="text" id="descripCaso" name="descripcionCaso" required>
+
+        <label for="fechaInicio">Fecha de inicio del caso:</label>
+        <input type="date" id="fechaInicio" name="fechaInicio" placeholder="DD/MM/AAAA" required>
+
+        <label for="estadoCaso">Estado del caso:</label>
+        <input type="text" id="estadoCaso" name="estadoCaso" required>
+
+        <label for="descripcionSentencia">Descripción de la sentencia:</label>
+        <input type="text" id="descripcionSentencia" name="descripcionSentencia" required>
+
+        <label for="fechaCierre">Fecha de cierre del caso:</label>
+        <input type="date" id="fechaCierre" name="fechaCierre" placeholder="DD/MM/AAAA" required>
+
+        <button type="submit">Guardar</button>
+    </form>
+    <script src="validaciones.js"></script>
+</body>
+<br>
+<a href="listado.php">Ver Listado de Registros</a>
+</html>
